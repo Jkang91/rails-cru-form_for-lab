@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :genres, only: [:show, :create, :index, :update, :edit, :new]
+  resources :artists, only: [:show, :create, :index, :update, :edit, :new]
+  resources :songs, only: [:show, :create, :index, :update, :edit, :new]
 end
